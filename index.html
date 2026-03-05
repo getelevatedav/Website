@@ -654,11 +654,8 @@
     #book { background: var(--charcoal); }
 
     .book-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
+      max-width: 680px;
       margin-top: 3.5rem;
-      align-items: start;
     }
 
     .book-form-wrap {
@@ -785,51 +782,7 @@
       font-weight: 300;
     }
 
-    .book-calendly-wrap {
-      padding: 2.5rem;
-      border: 1px solid rgba(245,242,237,0.06);
-      background: rgba(245,242,237,0.02);
-    }
-
-    .book-calendly-wrap h3 {
-      font-family: var(--serif);
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 0.5rem;
-    }
-
-    .book-calendly-wrap > p {
-      font-size: 0.85rem;
-      color: var(--warm-gray);
-      margin-bottom: 2rem;
-      font-weight: 300;
-    }
-
-    .calendly-placeholder {
-      min-height: 380px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px dashed rgba(200,169,126,0.2);
-      background: rgba(10,10,10,0.4);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .calendly-placeholder p {
-      color: var(--warm-gray);
-      font-size: 0.85rem;
-      font-weight: 300;
-      line-height: 1.7;
-    }
-    .calendly-placeholder a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
     @media (max-width: 1024px) {
-      .book-grid { grid-template-columns: 1fr; }
-    }
 
     @media (max-width: 768px) {
       .form-row { grid-template-columns: 1fr; }
@@ -1322,90 +1275,71 @@
         <h3>Request a Quote</h3>
         <p>Tell us about your project and we'll get back to you within 24 hours.</p>
         <div id="quoteForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="first_name" placeholder="First name" required>
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="last_name" placeholder="Last name" required>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@email.com" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="service">Service Interested In</label>
-            <select id="service" name="service">
-              <option value="" disabled selected>Select a service</option>
-              <option value="home-theater">Home Theater</option>
-              <option value="tv-mounting">TV Mounting & Installation</option>
-              <option value="surround-sound">Surround Sound</option>
-              <option value="whole-home-audio">Whole-Home Audio</option>
-              <option value="security">Security Systems</option>
-              <option value="network-wifi">Network & WiFi</option>
-              <option value="lighting">Lighting Control</option>
-              <option value="smart-home">Smart Home Automation</option>
-              <option value="motorized-shades">Motorized Shades</option>
-              <option value="outdoor-av">Outdoor Audio & Video</option>
-              <option value="low-voltage">Low Voltage Wiring</option>
-              <option value="pre-wire">Pre-Wire & New Construction</option>
-              <option value="other">Other / Multiple</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="location">Location / Neighborhood</label>
-            <input type="text" id="location" name="location" placeholder="e.g. Rittenhouse, Bryn Mawr, East Hampton">
-          </div>
-          <div class="form-group">
-            <label for="details">Project Details</label>
-            <textarea id="details" name="details" placeholder="Tell us a bit about what you're looking for — room size, ideas, timeline, etc."></textarea>
-          </div>
-          <button type="button" class="btn-submit" onclick="submitForm()">Submit Request</button>
-        </div>
-        <div class="form-success" id="formSuccess">
-          <h3>We got it.</h3>
-          <p>Thanks for reaching out — we'll be in touch within 24 hours to discuss your project.</p>
-        </div>
-      </div>
-      <div class="book-calendly-wrap">
-        <h3>Schedule Directly</h3>
-        <p>Prefer to pick a time? Book a free consultation on our calendar.</p>
-        <!-- 
-          CALENDLY EMBED — Replace the placeholder below with your Calendly inline widget.
+          <form action="https://formsubmit.co/contact@getelevatedav.com" method="POST">
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_subject" value="New Quote Request — elevate.">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://getelevatedav.com/#book">
+            <input type="text" name="_honey" style="display:none">
 
 ```
-      1. Sign up at calendly.com (free)
-      2. Create an event type (e.g. "Free AV Consultation — 30 min")
-      3. Go to Share → Add to website → Inline embed
-      4. Copy the embed code and replace the .calendly-placeholder div below
-      
-      Example embed code:
-      <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-USERNAME/consultation" style="min-width:280px;height:500px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    -->
-    <div class="calendly-placeholder">
-      <div>
-        <p style="font-size:2rem;margin-bottom:1rem;">📅</p>
-        <p><strong style="color:var(--white);">Calendly embed goes here</strong><br><br>
-        Set up your free account at <a href="https://calendly.com" target="_blank">calendly.com</a>, create a consultation event, and paste the inline embed code here.<br><br>
-        See the HTML comment above this element for step-by-step instructions.</p>
-      </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="First Name" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="Last Name" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" placeholder="(555) 555-5555">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="Service">
+            <option value="" disabled selected>Select a service</option>
+            <option value="Home Theater">Home Theater</option>
+            <option value="TV Mounting & Installation">TV Mounting & Installation</option>
+            <option value="Surround Sound">Surround Sound</option>
+            <option value="Whole-Home Audio">Whole-Home Audio</option>
+            <option value="Security Systems">Security Systems</option>
+            <option value="Network & WiFi">Network & WiFi</option>
+            <option value="Lighting Control">Lighting Control</option>
+            <option value="Smart Home Automation">Smart Home Automation</option>
+            <option value="Motorized Shades">Motorized Shades</option>
+            <option value="Outdoor Audio & Video">Outdoor Audio & Video</option>
+            <option value="Low Voltage Wiring">Low Voltage Wiring</option>
+            <option value="Pre-Wire & New Construction">Pre-Wire & New Construction</option>
+            <option value="Other / Multiple">Other / Multiple</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Location / Neighborhood</label>
+          <input type="text" id="location" name="Location" placeholder="e.g. Rittenhouse, Bryn Mawr, East Hampton">
+        </div>
+        <div class="form-group">
+          <label for="details">Project Details</label>
+          <textarea id="details" name="Project Details" placeholder="Tell us a bit about what you're looking for — room size, ideas, timeline, etc."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Submit Request</button>
+      </form>
     </div>
-    <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(245,242,237,0.06);text-align:center;">
-      <p style="font-size:0.85rem;color:var(--warm-gray);font-weight:300;margin-bottom:1rem;">Or just give us a call</p>
-      <a href="tel:2157705800" class="btn-primary" style="width:100%;justify-content:center;">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
-        (215) 770-5800
-      </a>
+    <div class="form-success" id="formSuccess">
+      <h3>We got it.</h3>
+      <p>Thanks for reaching out — we'll be in touch within 24 hours to discuss your project.</p>
+    </div>
+    <div style="margin-top:1.5rem;text-align:center;">
+      <p style="font-size:0.85rem;color:var(--warm-gray);font-weight:300;">Prefer to talk? Call us at <a href="tel:2157705800" style="color:var(--accent);text-decoration:none;">(215) 770-5800</a></p>
     </div>
   </div>
 </div>
@@ -1442,7 +1376,7 @@
           <h4>Contact</h4>
           <a href="#book">Book a Consultation</a>
           <a href="tel:2157705800">(215) 770-5800</a>
-          <a href="mailto:info@getelevatedav.com">info@getelevatedav.com</a>
+          <a href="mailto:contact@getelevatedav.com">contact@getelevatedav.com</a>
         </div>
       </div>
     </div>
@@ -1489,49 +1423,6 @@
     // Mobile menu
     function toggleMenu() {
       document.getElementById('mobileMenu').classList.toggle('open');
-    }
-
-    // Form submission
-    // Currently shows a success message on the frontend.
-    // To actually receive submissions, connect to one of these (takes 2 min):
-    //
-    // OPTION A — Netlify Forms (if hosting on Netlify):
-    //   Wrap the form fields in a <form> tag with these attributes:
-    //   <form name="quote" method="POST" data-netlify="true">
-    //   Submissions will appear in your Netlify dashboard under Forms.
-    //
-    // OPTION B — Formspree (works anywhere):
-    //   1. Sign up at formspree.io (free for 50 submissions/month)
-    //   2. Create a form and get your endpoint URL
-    //   3. Replace the fetch URL below with your Formspree endpoint
-    //
-    function submitForm() {
-      const fields = {
-        first_name: document.getElementById('fname').value,
-        last_name: document.getElementById('lname').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        service: document.getElementById('service').value,
-        location: document.getElementById('location').value,
-        details: document.getElementById('details').value
-      };
-
-      // Basic validation
-      if (!fields.first_name || !fields.last_name || !fields.email) {
-        alert('Please fill in your name and email.');
-        return;
-      }
-
-      // Show success state
-      document.getElementById('quoteForm').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
-
-      // TODO: Uncomment and update the URL below to send data to Formspree
-      // fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(fields)
-      // });
     }
   </script>
 
