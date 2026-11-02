@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>elevate. | King's Corner Public House Video &amp; Audio Proposal</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Video and audio proposal for King's Corner Public House, prepared by elevate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Template: elevate. technology proposal (King's Corner phase 1 structure). Cover, findings, base system, add-ons, good to know, send selections. Single light theme. */
+:root{
+  --ink:#101A16; --green:#1C3B31; --brass:#B08A3E; --brass-soft:#E7D9B8; --stone:#E4E2DB;
+  --bg:#FBFAF7; --paper:#ffffff; --muted:#67716C; --line:#E4E2DB;
+  --accent:#1C3B31; --accent-soft:#F3ECDC; --accent-ink:#FBFAF7;
+  --red:#A8412F; --red-soft:#F6E5E1; --amber:#9A6C1E; --amber-soft:#F6ECD8; --green-ok:#3E7A5E; --green-soft:#E2EFE8;
+  --screen:#0C1411; --screen-line:#263530;
+  --c1:#2f6fdb; --c2:#c8432f; --c3:#23935f; --roku:#6d3fc6; --atv:#6b7280;
+  --display:"Bitter",Georgia,"Times New Roman",serif;
+  --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --radius:8px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--body)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0;letter-spacing:-.015em}
+h1{font-size:clamp(30px,6vw,46px);font-weight:600;letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,3.2vw,2rem);font-weight:600}
+h3{font-size:1.08rem;font-weight:600}
+p{margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.muted{color:var(--muted)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.kicker{font:700 11px/1.2 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+section{padding:60px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px 24px;flex-wrap:wrap;border-bottom:1px solid var(--stone);padding-bottom:12px;margin-bottom:24px}
+.intro{max-width:64ch;color:var(--muted);margin-bottom:24px}
+
+/* Cover */
+.cover{background:var(--ink);color:var(--bg);padding:44px 0 38px;border-bottom:5px solid var(--brass)}
+.cover .brand{font:700 30px/1 var(--display);letter-spacing:-.02em}
+.cover .brand span{color:var(--brass)}
+.cover-body{display:grid;gap:12px;margin-top:26px}
+.cover .kicker{color:var(--brass)}
+.cover .lede{font-size:16px;color:#C9D1CB;max-width:52ch}
+.meta{display:flex;flex-wrap:wrap;gap:26px;margin-top:26px;border-top:1px solid rgba(255,255,255,.16);padding-top:16px}
+.meta div{display:grid;gap:4px}
+.meta .kicker{color:#9AA79F;font-size:12px;letter-spacing:.1em;font-weight:500}
+.meta strong{font-weight:600;font-size:15px;color:var(--bg)}
+
+/* Findings */
+.findings{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.find{display:grid;grid-template-columns:200px 1fr 130px;gap:16px;align-items:center;padding:16px 20px;border-top:1px solid var(--line)}
+.find:first-child{border-top:0}
+.find h3{font-size:1.02rem}
+.find p{color:var(--muted);font-size:.93rem}
+.badge{justify-self:end;font:700 10.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:6px 9px;border-radius:999px;white-space:nowrap}
+.b-red{background:var(--red-soft);color:var(--red)}
+.b-amber{background:var(--amber-soft);color:var(--amber)}
+.b-green{background:var(--green-soft);color:var(--green-ok)}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.photo{margin:0;display:grid;gap:8px}
+.photo .frame{aspect-ratio:4/5;border-radius:8px;border:1px dashed #c9cbc6;background:repeating-linear-gradient(135deg,var(--paper) 0 10px,var(--bg) 10px 20px);display:grid;place-items:center;overflow:hidden}
+.photo .frame img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .frame span{font:500 .74rem/1 var(--mono);color:var(--muted)}
+.photo figcaption{font-size:.92rem;color:var(--muted)}
+.photo figcaption b{color:var(--ink)}
+.bridge{margin-top:28px;font:italic 400 1.15rem/1.5 var(--display);max-width:60ch;border-left:3px solid var(--brass);padding-left:16px}
+
+/* TV wall */
+.experience{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
+.wall{background:var(--screen);border-radius:12px;padding:18px;display:grid;gap:14px}
+.wall-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}
+.tv{aspect-ratio:16/9;border-radius:4px;border:1px solid var(--screen-line);position:relative;overflow:hidden;display:grid;place-items:center;transition:background-color .35s ease}
+.tv .lbl{font:600 .6rem/1.1 var(--mono);color:#fff;text-align:center;padding:2px}
+.tv .no{position:absolute;top:3px;left:4px;font:500 .52rem/1 var(--mono);color:rgba(255,255,255,.7)}
+.tv.quad{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:#000;place-items:stretch}
+.tv.quad i{display:block}
+.wall-ctrl{display:flex;flex-wrap:wrap;gap:8px}
+.wall-ctrl button{font:600 .8rem/1 var(--body);color:#cfd6e2;background:transparent;border:1px solid var(--screen-line);border-radius:999px;padding:9px 13px;cursor:pointer}
+.wall-ctrl button[aria-pressed="true"]{background:var(--brass);border-color:var(--brass);color:var(--ink)}
+.wall-cap{font-size:.84rem;color:#a7b0bf;min-height:2.6em}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:500 .68rem/1 var(--mono);color:#a7b0bf}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:2px}
+.benefits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.benefits li{padding:14px 0;border-top:1px solid var(--line);display:grid;gap:2px}
+
+.benefits b{font-family:var(--display);font-weight:600;font-size:1.02rem}
+.benefits span{color:var(--muted);font-size:.93rem}
+
+/* Base system card (mirrors option card) */
+.foundation{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:18px}
+.foundation p{margin-bottom:10px}
+.dots{margin:0;padding-left:20px;display:grid;gap:6px}
+.dots.two{grid-template-columns:1fr 1fr;column-gap:36px}
+.option{background:var(--paper);border:2px solid var(--green);border-radius:var(--radius);overflow:hidden}
+.option-top{background:var(--green);color:var(--brass-soft);padding:9px 24px;font:700 11px/1 var(--body);letter-spacing:.18em;text-transform:uppercase}
+.option-body{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.option .k{font:600 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.price-lg{font:700 clamp(1.7rem,4vw,2.2rem)/1.1 var(--display);font-variant-numeric:tabular-nums;margin:6px 0 4px}
+.also{background:var(--accent-soft);border-radius:8px;padding:14px 16px;font-size:.92rem;margin-top:16px}
+.also .k{display:block;margin-bottom:4px;color:var(--brass)}
+.bestfor{font-size:.92rem;margin-top:14px}
+.bestfor b{font-weight:600}
+
+/* Flow */
+.flow{display:grid;gap:12px}
+.lane{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;display:grid;grid-template-columns:100px 1fr;gap:16px;align-items:center}
+.lane-name{font:700 11px/1.2 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+.nodes{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.node{border:1px solid var(--line);background:var(--bg);border-radius:7px;padding:8px 11px;font-size:.87rem;line-height:1.3}
+.node small{display:block;color:var(--muted);font-size:.73rem}
+.node.opt{border-style:dashed}
+.node.hub{border-color:var(--brass);background:var(--accent-soft)}
+.arr{color:var(--muted);font:600 1rem/1 var(--mono)}
+
+/* Add-ons */
+.builder{display:grid;grid-template-columns:1fr 270px;gap:22px;align-items:start}
+.addons{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.addon{position:relative;border-top:1px solid var(--line)}
+.addon:first-child{border-top:0}
+.addon input{position:absolute;opacity:0;pointer-events:none}
+.addon label{display:grid;grid-template-columns:24px 1fr auto;gap:14px;align-items:start;padding:18px 20px;cursor:pointer;transition:background-color .2s}
+.addon label:hover{background:var(--bg)}
+.addon input:focus-visible + label{outline:2px solid var(--accent);outline-offset:-2px}
+.addon input:checked + label{background:var(--accent-soft)}
+.box{width:20px;height:20px;border:2px solid #9aa0a8;border-radius:4px;display:grid;place-items:center;margin-top:3px;background:var(--paper)}
+.box svg{width:13px;height:13px;opacity:0;color:#fff}
+.addon input:checked + label .box{background:var(--green);border-color:var(--green)}
+.addon input:checked + label .box svg{opacity:1}
+.addon h3{font-size:1.04rem;margin-bottom:3px}
+.addon .desc{color:var(--muted);font-size:.92rem;display:block}
+.addon .cond{font-size:.8rem;margin-top:6px;display:block;color:var(--amber)}
+.price{text-align:right;display:grid;gap:3px;min-width:118px}
+.price .big{font:600 .98rem/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.price small{font-size:.75rem;color:var(--muted);line-height:1.35}
+.est{position:sticky;top:16px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:grid;gap:12px}
+.est-row{display:flex;justify-content:space-between;gap:10px;font-size:.9rem}
+.est-row .num{white-space:nowrap}
+.est-total{border-top:2px solid var(--green);padding-top:12px;display:grid;gap:4px}
+.est-total .num{font-size:1.35rem;font-weight:600;line-height:1.2}
+.est-sel{font-size:.86rem}
+.est-sel ul{margin:6px 0 0;padding-left:18px}
+.est .warn{font-size:.79rem;color:var(--muted);line-height:1.45}
+
+/* Tables */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;display:grid;gap:12px;align-content:start}
+.tbl{width:100%;border-collapse:collapse;font-size:.92rem}
+.tbl th,.tbl td{padding:9px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl td:last-child,.tbl th:last-child{text-align:right;white-space:nowrap;font-family:var(--mono);font-variant-numeric:tabular-nums;padding-left:12px}
+.tbl th{font:600 .7rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tbl tr.sum td{font-weight:600;border-bottom:2px solid var(--ink)}
+.tbl small{display:block;color:var(--muted);font-size:.79rem}
+.pending{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+.pending li{font-size:.83rem;border:1px dashed #c4c7c2;border-radius:999px;padding:4px 11px;color:var(--muted)}
+
+/* Good to know */
+.gtk{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.gtk div{padding:18px 0;border-top:1px solid var(--line);display:grid;gap:6px}
+.gtk p{color:var(--muted);font-size:.94rem}
+
+/* Details */
+details{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px}
+summary{cursor:pointer;padding:15px 20px;font:600 1rem/1.2 var(--display);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 1.4rem/1 var(--body);color:var(--brass)}
+details[open] summary::after{content:"–"}
+.dbody{padding:0 20px 20px;display:grid;gap:12px;font-size:.92rem}
+.dbody ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.scroll{overflow-x:auto}
+.scroll .tbl{min-width:520px}
+.checks{columns:2;column-gap:40px;margin:0;padding:0;list-style:none;counter-reset:c}
+.checks li{break-inside:avoid;padding:9px 0 9px 36px;position:relative;border-bottom:1px solid var(--line);font-size:.93rem}
+.checks li::before{counter-increment:c;content:counter(c,decimal-leading-zero);position:absolute;left:0;top:10px;font:700 .8rem/1 var(--body);color:var(--brass)}
+
+/* CTA */
+.cta{background:var(--ink);color:var(--bg);border-radius:10px;border-bottom:5px solid var(--brass);padding:36px;display:grid;gap:16px}
+.cta p{color:#C9D1CB;max-width:60ch}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{font:700 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;background:var(--brass);color:var(--ink);border:0;border-radius:999px;padding:15px 22px;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:#fff;border:1px solid #4a515c}
+.cta small{color:#9AA79F;font-size:.82rem}
+#copied{color:#9fd3b4;font-size:.85rem;min-height:1.2em}
+footer{padding:28px 0 90px;text-align:center;font-size:.88rem;color:var(--muted)}
+footer b{color:var(--ink);font-family:var(--display);font-weight:700}
+
+.mbar{display:none}
+
+@media (max-width:820px){
+  .experience,.builder,.option-body,.two-col{grid-template-columns:1fr}
+  .est{position:static}
+  .find{grid-template-columns:1fr auto;gap:4px 12px}
+  .find p{grid-column:1/-1;grid-row:2}
+  .find .badge{grid-column:2;grid-row:1}
+}
+@media (max-width:620px){
+  section{padding:44px 0}
+  .meta{grid-template-columns:1fr 1fr;gap:14px 24px}
+  .gtk,.dots.two,.benefits{grid-template-columns:1fr}
+  .photos{grid-template-columns:1fr 1fr;gap:12px}
+  .photo figcaption{font-size:.84rem}
+  .checks{columns:1}
+  .lane{grid-template-columns:1fr;gap:10px}
+  .nodes{flex-direction:column;align-items:stretch}
+  .arr{transform:rotate(90deg);align-self:center;line-height:.6}
+  .wall-grid{gap:5px}
+  .tv .lbl{font-size:.48rem}
+  .addon label{grid-template-columns:22px 1fr}
+  .price{grid-column:2;text-align:left;min-width:0}
+  .cta{padding:26px 22px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--paper);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));justify-content:space-between;align-items:center;gap:12px}
+  .mbar .num{font-size:.92rem;font-weight:600}
+  .mbar a{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;background:var(--green);color:var(--bg);text-decoration:none;padding:11px 14px;border-radius:999px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="brand">elevate<span>.</span></div>
+    <div class="cover-body">
+      <p class="kicker">Technology proposal · Phase 2: Video &amp; audio</p>
+      <h1>King's Corner Public House</h1>
+      <p class="lede">A plan to replace the aging TV distribution system so any game can go to any screen, and video, multiview and music are all controlled from two simple tablets at the bar.</p>
+    </div>
+    <div class="meta">
+      <div><span class="kicker">Prepared for</span><strong>King's Corner Public House</strong></div>
+      <div><span class="kicker">Prepared by</span><strong>Michael Emmerich, elevate.</strong></div>
+      <div><span class="kicker">Valid</span><strong>30 days</strong></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>What we found</h2><span class="kicker">Walkthrough summary</span></div>
+    <div class="findings">
+      <div class="find"><h3>TV distribution hardware</h3><p>Binary HDMI splitters and extenders from 2012, now about 14 years old</p><span class="badge b-red">Action needed</span></div>
+      <div class="find"><h3>Source routing</h3><p>TVs limited to the routes the legacy matrix supports; no easy way to put one game everywhere or mix freely</p><span class="badge b-red">Action needed</span></div>
+      <div class="find"><h3>TV &amp; audio control</h3><p>No central control point for staff to change video sources and music together</p><span class="badge b-amber">Needs review</span></div>
+      <div class="find"><h3>Audio sources</h3><p>Cable boxes, jukebox and Sonos Port in use; source routing to the main system to be centralized</p><span class="badge b-amber">Needs review</span></div>
+      <div class="find"><h3>Rack audio equipment</h3><p>Existing audio gear to be removed or reworked, with wiring cleaned up at the rack and TVs</p><span class="badge b-amber">Needs review</span></div>
+      <div class="find"><h3>Source options</h3><p>Three cable boxes only; no path to add streaming players</p><span class="badge b-amber">Needs review</span></div>
+    </div>
+
+    <div class="photos" id="photos"></div>
+
+    <p class="bridge">The TVs already work. This project makes every one of them flexible, so the room can follow whatever game your guests came to watch.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>What changes</h2><span class="kicker">Try the presets</span></div>
+    <div class="experience">
+      <div class="wall" aria-label="Example TV wall presets">
+        <div class="wall-ctrl" role="group" aria-label="Choose an example preset">
+          <button type="button" data-preset="one" aria-pressed="true">One game everywhere</button>
+          <button type="button" data-preset="mix" aria-pressed="false">Three games</button>
+            <button type="button" data-preset="stream" aria-pressed="false">Add streaming</button>
+        </div>
+        <div class="wall-grid" id="wall"></div>
+        <p class="wall-cap" id="wallCap" aria-live="polite"></p>
+        <div class="legend">
+          <span><i style="background:var(--c1)"></i>Cable 1</span>
+          <span><i style="background:var(--c2)"></i>Cable 2</span>
+          <span><i style="background:var(--c3)"></i>Cable 3</span>
+          <span><i style="background:var(--roku)"></i>Roku (add-on)</span>
+          <span><i style="background:var(--atv)"></i>Apple TV (add-on)</span>
+        </div>
+      </div>
+      <ul class="benefits">
+        <li><b>Every screen is flexible</b><span>Send any connected source to any TV instead of tying each screen to one feed.</span></li>
+        <li><b>Watch together or split up</b><span>One game on all ten TVs for the big night, or different games around the room.</span></li>
+        <li><b>Multiview on demand</b><span>Up to four sources on one screen, using layouts we program in advance.</span></li>
+        <li><b>More than cable</b><span>Room to add Roku or Apple TV as extra sources.</span></li>
+        <li><b>Simple control from the bar</b><span>Two tablets, one at the front of the bar and one near the kitchen.</span></li>
+        <li><b>Audio follows the moment</b><span>Switch the room between game audio, Sonos, the jukebox, or an optional DJ input.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>The system</h2><span class="kicker">Base scope</span></div>
+
+    <div class="foundation">
+      <p><strong>Included in the base system</strong></p>
+      <ul class="dots two">
+        <li>Video distribution to all ten TVs</li>
+        <li>Three cable-box sources, routable to any TV</li>
+        <li>One multiview tiler with programmed layouts</li>
+        <li>Control4 control with two tablet stations</li>
+        <li>Central audio matrix for cable boxes, jukebox &amp; Sonos</li>
+        <li>Managed network for the video system</li>
+        <li>New HDMI lead and adapter where needed at every TV</li>
+        <li>One additional Cat6 cable run</li>
+        <li>Old audio gear removed, rack rewired and labeled</li>
+        <li>Wire cleanup at the rack and TVs</li>
+      </ul>
+    </div>
+
+    <div class="option">
+      <div class="option-top">Recommended · Base system</div>
+      <div class="option-body">
+        <div>
+          <h3 style="font-size:1.5rem">Ten-TV video &amp; audio system</h3>
+          <div class="price-lg">$27,195–$28,571</div>
+          <span class="k">Preliminary estimate · Priced items so far</span>
+          <p class="muted" style="margin-top:12px;font-size:.93rem">Replaces the 2012 distribution system with a platform designed to stay flexible for the next decade, with simple control for any staff member on shift.</p>
+        </div>
+        <div>
+          <ul class="dots">
+            <li>Any source to any of the ten TVs</li>
+            <li>One-tap presets for single game, mixed games and multiview</li>
+            <li>Video, multiview and audio from either tablet</li>
+            <li>Cable-box control built in, no handheld remote needed</li>
+            <li>Every source tested and staff walked through the system</li>
+          </ul>
+          <div class="also"><span class="k">Still being priced</span>Transmitters, controller, network switch, tablets and mounts, and HDMI leads are being priced through our distributor. The full list is under <a href="#investment">Investment</a>.</div>
+          <p class="bestfor"><b>Best for:</b> a bar that shows several games at once and needs staff to change the room fast, without hunting for a remote.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>How it works</h2><span class="kicker">Three layers</span></div>
+    <div class="flow">
+      <div class="lane">
+        <div class="lane-name">Control</div>
+        <div class="nodes">
+          <div class="node">Front-of-bar tablet</div>
+          <div class="node">Kitchen tablet</div>
+          <span class="arr">→</span>
+          <div class="node hub">Control4 Core 3<small>Routing, presets, cable-box control</small></div>
+        </div>
+      </div>
+      <div class="lane">
+        <div class="lane-name">Video</div>
+        <div class="nodes">
+          <div class="node">3 cable boxes</div>
+          <div class="node opt">Roku / Apple TV<small>Add-on</small></div>
+          <span class="arr">→</span>
+          <div class="node">Transmitters<small>One per source</small></div>
+          <span class="arr">→</span>
+          <div class="node hub">Video network<small>Plus multiview tiler</small></div>
+          <span class="arr">→</span>
+          <div class="node">10 receivers</div>
+          <span class="arr">→</span>
+          <div class="node">10 TVs</div>
+        </div>
+      </div>
+      <div class="lane">
+        <div class="lane-name">Audio</div>
+        <div class="nodes">
+          <div class="node">Cable boxes 1–3</div>
+          <div class="node">Jukebox</div>
+          <div class="node">Sonos Port</div>
+          <div class="node opt">DJ / mic inputs<small>Add-on</small></div>
+          <span class="arr">→</span>
+          <div class="node hub">Audio matrix<small>8 in × 8 out</small></div>
+          <span class="arr">→</span>
+          <div class="node">Main audio system</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="build">
+  <div class="wrap">
+    <div class="sec-head"><h2>Add to the project</h2><span class="kicker">Check any that interest you</span></div>
+    <p class="intro">Check anything you'd like included. Each add-on is quoted separately once you've selected it.</p>
+    <div class="builder">
+      <div class="addons" id="addons"></div>
+      <aside class="est" aria-live="polite">
+        <span class="kicker">Your selections</span>
+        <div class="est-row"><span>Base system</span><span class="num" id="eBase"></span></div>
+        <div class="est-row"><span>Add-ons</span><span class="num" id="eAdd"></span></div>
+        <div class="est-total"><span class="muted" style="font-size:.83rem">Preliminary range</span><span class="num" id="eTotal"></span></div>
+        <div class="est-sel" id="eSel"></div>
+        <p class="warn">Not a final price. Selected add-ons are quoted later, and base items still being priced are not included yet.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="investment">
+  <div class="wrap">
+    <div class="sec-head"><h2>Investment</h2><span class="kicker">Where the numbers stand</span></div>
+    <div class="two-col">
+      <div class="card">
+        <h3>Priced so far</h3>
+        <table class="tbl">
+          <thead><tr><th>Item</th><th>Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Multiview tiler<small>Just Add Power MC-QX</small></td><td>$7,995.00</td></tr>
+            <tr><td>Ten TV receivers<small>Just Add Power MC-RX1 × 10</small></td><td>$12,500.00</td></tr>
+            <tr><td>Audio matrix<small>Triad TS-AMS8-V2</small></td><td>$1,887.99</td></tr>
+            <tr><td>Installation, programming &amp; project management</td><td>$4,812.50–$6,187.50</td></tr>
+            <tr class="sum"><td>Partial base subtotal</td><td>$27,195.49–$28,570.49</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Still being priced</h3>
+        <ul class="pending">
+          <li>Three source transmitters</li><li>Control4 Core 3</li><li>Managed video network switch</li>
+          <li>Two tablets, mounts &amp; charging</li><li>Tablet mounting labor</li><li>HDMI leads at each TV</li>
+          <li>Right-angle HDMI adapters</li><li>Cat6 run materials</li><li>Jukebox audio interface</li>
+          <li>Cable-box audio adapters, if needed</li><li>Rack materials &amp; labels</li><li>Sales tax</li>
+        </ul>
+        <p class="muted" style="font-size:.88rem">Equipment figures are published reference prices. We'll replace them with distributor pricing and close these items before issuing a fixed quote.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3>Installation scope</h3>
+      <ul class="dots two" id="labor"></ul>
+      <table class="tbl"><tbody><tr class="sum"><td>Installation, programming &amp; project management</td><td>$4,812.50–$6,187.50</td></tr></tbody></table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Good to know</h2></div>
+    <div class="gtk">
+      <div><h3>Multiview</h3><p>The base system includes one multiview tiler. It builds one layout of up to four sources that can go to any number of TVs, and every TV showing multiview shares that layout. Layouts are programmed in advance and chosen from the tablet.</p></div>
+      <div><h3>Existing cabling</h3><p>One new Cat6 run is included. TV allowances assume short connections from each receiver to its TV. If we find in-wall HDMI runs or hard access, that work is priced and presented for your approval before it starts.</p></div>
+      <div><h3>Scheduling</h3><p>Work is scheduled around your 11:00 AM open. The switchover from the old system to the new one is done before opening or during your slowest window, confirmed with you in advance.</p></div>
+      <div><h3>What you keep</h3><p>A labeled rack, an equipment list, and a written record of how every source, TV and audio input is connected, plus a walkthrough of the tablets for your staff.</p></div>
+      <div><h3>Pricing</h3><p>The figures here are a preliminary estimate. After the site walk and distributor quote you'll get one fixed, turnkey price. A 50% deposit reserves your dates; the balance is due on completion.</p></div>
+      <div><h3>No handheld remote</h3><p>Control runs through the two tablet stations, so there's one consistent way to run the room on every shift.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>System details</h2><span class="kicker">For the technically curious</span></div>
+    <details>
+      <summary>Video system</summary>
+      <div class="dbody"><ul>
+        <li>Three Just Add Power MC-TX1 4K60 transmitters at the cable boxes; one more per streaming source added.</li>
+        <li>Ten Just Add Power MC-RX1 4K60 receivers, one per TV, each with a new HDMI patch lead.</li>
+        <li>One Just Add Power MC-QX 4K60 tiler (up to four sources per tiled screen).</li>
+        <li>Managed Ethernet switch with multicast/IGMP support, sized after reviewing your existing network and ports.</li>
+        <li>Right-angle HDMI adapters where mounts or clearance require them; direction confirmed at each TV.</li>
+        <li>Control4 Core 3 for source routing, multiview presets and IR control of the cable boxes.</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary>Audio system</summary>
+      <div class="dbody"><ul>
+        <li>Triad TS-AMS8-V2: eight stereo inputs, eight outputs; analog RCA, digital coax and optical inputs; line-level feed to the main system.</li>
+        <li>Cable-box audio connections confirmed against exact box models; any extraction specified after that check.</li>
+        <li>Sonos Port by digital coax where compatible, RCA as fallback.</li>
+        <li>Dedicated jukebox audio path to the rack; line-level interface specified if it must travel over Cat6.</li>
+      </ul></div>
+    </details>
+    <details>
+      <summary>DJ / microphone input path (add-on)</summary>
+      <div class="dbody">
+        <p>Two wall-mounted XLR inputs feed an Audinate Dante AVIO 2-channel analog input adapter. Audio travels over the network to a matching Dante output adapter at the rack, which feeds an analog input on the matrix. The matrix doesn't accept Dante directly.</p>
+        <ul><li>Adapters take line-level audio. Mics that need a preamp require a small mixer or preamp, priced separately.</li><li>Alternate Dante products are confirmed for model and availability before substituting.</li></ul>
+      </div>
+    </details>
+    <details>
+      <summary>Equipment and price status</summary>
+      <div class="dbody scroll">
+        <table class="tbl">
+          <thead><tr><th>Item</th><th>Qty</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td>Just Add Power MC-QX 4K60 tiling encoder</td><td>1</td><td>$7,995.00</td></tr>
+            <tr><td>Just Add Power MC-RX1 4K60 receiver</td><td>10</td><td>$12,500.00</td></tr>
+            <tr><td>Just Add Power MC-TX1 4K60 transmitter</td><td>3</td><td>Pending</td></tr>
+            <tr><td>Triad TS-AMS8-V2 8×8 audio matrix</td><td>1</td><td>$1,887.99</td></tr>
+            <tr><td>Control4 Core 3 controller</td><td>1</td><td>Pending</td></tr>
+            <tr><td>Managed video network switch</td><td>1</td><td>Pending</td></tr>
+            <tr><td>Control4 tablets / touchscreens</td><td>2</td><td>Pending</td></tr>
+            <tr><td>HDMI patch leads</td><td>10</td><td>Pending</td></tr>
+            <tr><td>Right-angle HDMI adapters</td><td>Up to 10</td><td>Pending</td></tr>
+            <tr><td>Additional Cat6 home run</td><td>1</td><td>Pending</td></tr>
+            <tr><td>Jukebox audio interface / line driver</td><td>1</td><td>Pending</td></tr>
+            <tr><td>Cable-box audio adapters, if required</td><td>Allowance</td><td>Pending</td></tr>
+            <tr><td>Rack materials, patch cords, labels</td><td>Allowance</td><td>Pending</td></tr>
+            <tr><td><em>Add-on:</em> Dante AVIO analog input adapter</td><td>1</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Dante AVIO analog output adapter</td><td>1</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Two-input XLR wall plate &amp; wiring</td><td>1</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Bond Bridge Pro</td><td>1</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Roku Ultra</td><td>1</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Apple TV 4K</td><td>1</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Transmitter per streaming source</td><td>1 each</td><td>Quoted later</td></tr>
+            <tr><td><em>Add-on:</em> Table QR-code stands</td><td>TBD</td><td>Quoted later</td></tr>
+          </tbody>
+        </table>
+        <p class="muted" style="font-size:.83rem">Published reference prices, not a distributor quote. Prices, availability and part numbers are verified before the final proposal.</p>
+      </div>
+    </details>
+    <details>
+      <summary>What we'll confirm on the site walk</summary>
+      <div class="dbody">
+        <ol class="checks">
+          <li>Model numbers and audio outputs for all three cable boxes</li>
+          <li>Jukebox model, audio output and remote control type</li>
+          <li>That the Sonos unit is a Sonos Port in working order</li>
+          <li>Which multiview layouts you'd like programmed</li>
+          <li>Tablet model, mounting, charging and network at both stations</li>
+          <li>Existing network equipment and available ports</li>
+          <li>Number of audio zones and the main system's input</li>
+          <li>Route and access for the additional Cat6 run</li>
+          <li>Rack condition and which audio equipment comes out</li>
+          <li>HDMI connector position and clearance at each TV</li>
+          <li>DJ/mic channel count and whether a preamp is needed</li>
+          <li>Whether your jukebox payment provider supports table QR stands</li>
+        </ol>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Ready when you are</h2>
+      <p>Check any add-ons you'd like included, then send your selections over. We'll schedule the site walk, confirm the open items, and come back with one fixed price and dates that work around service.</p>
+      <div class="cta-actions">
+        <button type="button" class="btn" id="copyBtn">Copy my selections</button>
+        <a class="btn ghost" href="#build">Review add-ons</a>
+      </div>
+      <small id="copied" aria-live="polite"></small>
+      <small>Paste your selections into a text or email to Mike.</small>
+    </div>
+  </div>
+</section>
+
+<footer><b>elevate.</b> &nbsp;·&nbsp; getelevatedav.com &nbsp;·&nbsp; Philadelphia &amp; surrounding areas</footer>
+
+<div class="mbar"><div><div class="muted" style="font-size:.7rem">Preliminary range</div><div class="num" id="mTotal"></div></div><a href="#build">Add-ons</a></div>
+
+<script>
+/* Photos: set src to a data: URI or relative path (e.g. "photos/rack.jpg") once uploaded */
+const PHOTOS = [
+  {src:"kc-av-bar.jpg", lead:"The bar.", caption:"Every screen carries the game today, fed by splitters and extenders installed in 2012."},
+  {src:"kc-av-room.jpg", lead:"The room.", caption:"TVs on every wall, from the back bar to the taps, all tied to fixed feeds."},
+  {src:"kc-av-music.jpg", lead:"The music.", caption:"The jukebox shares the back wall with a TV. Its audio will route through one central matrix."},
+  {src:"kc-av-rack.jpg", lead:"The rack.", caption:"Binary HDMI splitters and extenders stacked between the cable boxes, the oldest gear in the system."},
+  {src:"kc-av-behind.jpg", lead:"Behind the displays.", caption:"Extenders and HDMI leads hanging loose behind the TVs, none of them labeled."},
+  {src:"kc-av-ports.jpg", lead:"The connections.", caption:"Dust-packed HDMI and audio ports on the back of an older display."}
+];
+
+const LABOR = [
+  "Install ten TV receivers and HDMI leads",
+  "Remove old audio gear, rebuild rack, install transmitters and matrix",
+  "Cable-box control and connections",
+  "Additional Cat6 run, drilling and pathway",
+  "Wire cleanup at rack and TVs",
+  "Connect audio sources, configure and test matrix",
+  "Control4 controller and driver setup",
+  "Video network setup and configuration",
+  "Tablet programming: routing, audio and multiview",
+  "Project management and coordination",
+  "Testing, troubleshooting and staff walkthrough"
+];
+
+const BASE = {min:27195.49, max:28570.49};
+
+const ADDONS = [
+  {id:"dante", name:"DJ & live event input",
+   desc:"Two XLR wall inputs that feed a DJ or line-level mic into house audio, selectable from the tablet.",
+   cond:"Line-level input. A mic preamp or small mixer may be needed."},
+  {id:"bond", name:"Jukebox power automation",
+   desc:"Turns the jukebox on and off with the rest of the system, so opening and closing is one tap.",
+   cond:"Offered once we confirm the jukebox's remote type and commands."},
+  {id:"roku", name:"Roku Ultra streaming source",
+   desc:"Adds a Roku any TV can show, selectable from the tablets.",
+   cond:"Includes one added transmitter for the new source."},
+  {id:"atv", name:"Apple TV 4K streaming source",
+   desc:"Adds an Apple TV any TV can show, selectable from the tablets.",
+   cond:"Includes one added transmitter for the new source."},
+  {id:"qr", name:"Table QR-code stands",
+   desc:"Stands on each table so guests can pick jukebox songs from their phones.",
+   cond:"Depends on your jukebox payment provider and number of tables."}
+];
+
+const fmt = n => { n = Math.round(n*100)/100; return "$" + n.toLocaleString("en-US",{minimumFractionDigits: n%1 ? 2 : 0, maximumFractionDigits:2}); };
+const rng = (a,b) => a===b ? fmt(a) : fmt(a)+"–"+fmt(b);
+const check = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>';
+
+document.getElementById("photos").innerHTML = PHOTOS.map(p =>
+  `<figure class="photo"><div class="frame">${p.src ? `<img src="${p.src}" loading="lazy" alt="${p.lead} ${p.caption}">` : `<span>Photo coming soon</span>`}</div><figcaption><b>${p.lead}</b> ${p.caption}</figcaption></figure>`
+).join("");
+
+document.getElementById("labor").innerHTML = LABOR.map(t => `<li>${t}</li>`).join("");
+
+document.getElementById("addons").innerHTML = ADDONS.map(a => {
+  const priceHtml = `<span class="big">Quoted later</span>`;
+  return `<div class="addon"><input type="checkbox" id="opt-${a.id}" value="${a.id}">
+    <label for="opt-${a.id}"><span class="box">${check}</span>
+      <span><h3>${a.name}</h3><span class="desc">${a.desc}</span><span class="cond">${a.cond}</span></span>
+      <span class="price">${priceHtml}</span></label></div>`;
+}).join("");
+
+function selected(){ return ADDONS.filter(a => document.getElementById("opt-"+a.id).checked); }
+function update(){
+  const sel = selected();
+  document.getElementById("eBase").textContent = rng(BASE.min, BASE.max);
+  document.getElementById("eAdd").textContent = sel.length ? "Quoted later" : "None selected";
+  const total = rng(BASE.min, BASE.max);
+  document.getElementById("eTotal").textContent = total;
+  document.getElementById("mTotal").textContent = total;
+  document.getElementById("eSel").innerHTML = sel.length
+    ? `<strong>Selected</strong><ul>${sel.map(a=>`<li>${a.name}</li>`).join("")}</ul>`
+    : `<span class="muted">Nothing selected yet.</span>`;
+}
+document.getElementById("addons").addEventListener("change", update);
+update();
+
+document.getElementById("copyBtn").addEventListener("click", async () => {
+  const sel = selected();
+  const text = "King's Corner – Video & Audio proposal selections\n\nBase system: Ten-TV video & audio system\nAdd-ons: " +
+    (sel.length ? "\n" + sel.map(a => "• " + a.name).join("\n") : "None") +
+    "\n\nPreliminary range: " + document.getElementById("eTotal").textContent;
+  const out = document.getElementById("copied");
+  try { await navigator.clipboard.writeText(text); out.textContent = "Copied. Paste it into a text or email."; }
+  catch(e){ out.textContent = "Couldn't copy automatically. Your selections: " + (sel.map(a=>a.name).join(", ") || "base system only"); }
+});
+
+/* TV wall demo */
+const COL = {c1:"var(--c1)", c2:"var(--c2)", c3:"var(--c3)", roku:"var(--roku)", atv:"var(--atv)"};
+const NAME = {c1:"Cable 1", c2:"Cable 2", c3:"Cable 3", roku:"Roku", atv:"Apple TV"};
+const PRESETS = {
+  one:{tvs:Array(10).fill("c1"), cap:"Big game night: Cable 1 on all ten screens."},
+  mix:{tvs:["c1","c1","c2","c2","c3","c1","c1","c2","c3","c3"], cap:"Three games at once, assigned TV by TV."},
+  stream:{tvs:["c1","c1","roku","roku","c2","c1","atv","atv","c3","c2"], cap:"With the Roku and Apple TV add-ons as extra sources."}
+};
+const wall = document.getElementById("wall"), cap = document.getElementById("wallCap");
+function showPreset(key){
+  const p = PRESETS[key];
+  wall.innerHTML = p.tvs.map((s,i) => s === "mv"
+    ? `<div class="tv quad" title="TV ${i+1}: Multiview"><i style="background:var(--c1)"></i><i style="background:var(--c2)"></i><i style="background:var(--c3)"></i><i style="background:#1b2433"></i></div>`
+    : `<div class="tv" style="background:${COL[s]}" title="TV ${i+1}: ${NAME[s]}"><span class="no">${i+1}</span><span class="lbl">${NAME[s]}</span></div>`
+  ).join("");
+  cap.textContent = p.cap + " Example only; final presets are programmed to your preference.";
+  document.querySelectorAll("[data-preset]").forEach(b => b.setAttribute("aria-pressed", b.dataset.preset === key));
+}
+document.querySelectorAll("[data-preset]").forEach(b => b.addEventListener("click", () => showPreset(b.dataset.preset)));
+showPreset("one");
+</script>
+</body>
+</html>
